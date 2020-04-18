@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: careerjob
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: deploy-career
+  template:
+    metadata:
+      name: deploy-career     
+      labels:
+        app: deploy-career
+    spec:
+      containers:
+      - image: afnandevops1234/careerjoin:v1 
+        name: containercareer
+        imagePullPolicy: IfNotPresent
+
