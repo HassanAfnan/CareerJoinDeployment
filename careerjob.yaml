@@ -14,7 +14,7 @@ spec:
         app: deploy-career
     spec:
       containers:
-      - image: afnandevops1234/careerjoin:v1 
+      - image: afnandevops1234/careerjoin:v2 
         name: containercareer
         imagePullPolicy: IfNotPresent
 
